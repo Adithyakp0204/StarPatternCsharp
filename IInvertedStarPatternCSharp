@@ -1,0 +1,27 @@
+## Code
+CSharp 
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter a row number: ");
+        int rows = int.Parse(Console.ReadLine());
+        
+        for(int i = rows; i >= 1; i--)
+        {
+            for(int j = 1; j <= rows - i; j++)
+            {
+                Console.Write(" ");
+            }
+            for(int k = 1; k<= (2 * i - 1); k++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
